@@ -1,7 +1,7 @@
 from django import forms
 
 
-class SearchForm(forms.Form):
+class AddForm(forms.Form):
     add = forms.CharField()
 
     def __init__(self, *args, **kwargs):

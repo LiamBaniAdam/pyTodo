@@ -140,3 +140,7 @@ input {
     color: #f44336;
     background-color: #fff;
 }
+
+.checked {
+    text-decoration: dashed;
+}

@@ -19,7 +19,8 @@ from todo import views
 from django.contrib import admin
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', views.show),
+    path('todo/add/', views.TodoAdd.as_view(), name='todo_add'),
     path('todo/delete/', views.TodoDelete.as_view(), name='todo_delete'),
+    path('todo/edit/', views.TodoEdit.as_view(), name='todo_edit'),
 ]
